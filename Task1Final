@@ -1,25 +1,3 @@
-CREATE ROLE "Giuseppe" WITH
-LOGIN
-NOSUPERUSER
-NOCREATEDB
-NOCREATEROLE
-INHERIT
-NOREPLICATION
-CONNECTION LIMIT -1
-PASSWORD 'Pizza';
-
-
-CREATE DATABASE cars
-WITH
-OWNER = "Giuseppe"
-ENCODING = "UTF8"
-LC_COLLATE = 'Polish_Poland.1250'
-LC_Ctype = 'Polish_Poland.1250'
-TABLESPACE = pg_default
-CONNECTION LIMIT = -1
-
-
-
 -- Role: "Giuseppe"
 -- DROP ROLE "Giuseppe";
 
@@ -32,7 +10,7 @@ CREATE ROLE "Giuseppe" WITH
   NOREPLICATION;
 
 
-CREATE DATABASE "Task1"
+CREATE DATABASE "cars"
     WITH 
     OWNER = "Giuseppe"
     ENCODING = 'UTF8'
